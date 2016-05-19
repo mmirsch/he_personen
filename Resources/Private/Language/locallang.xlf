@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-05-19T16:06:41Z" product-name="he_personen">
+		<header/>
+		<body>
+			<trans-unit id="tx_hepersonen_domain_model_persons">
+				<source>Persons</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_persons.office_hours">
+				<source>Office Hours</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_persons.foto">
+				<source>Foto</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_persons.foto_display_internet">
+				<source>Foto Display Internet</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_persons.fe_user">
+				<source>Fe User</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_persons.function">
+				<source>Function</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_functions">
+				<source>Functions</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_functions.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_hepersonen_domain_model_functions.function_type">
+				<source>Function Type</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

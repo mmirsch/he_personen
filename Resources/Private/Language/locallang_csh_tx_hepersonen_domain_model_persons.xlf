@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-05-19T16:06:41Z" product-name="he_personen">
+		<header/>
+		<body>
+			<trans-unit id="office_hours.description">
+				<source>officeHours</source>
+			</trans-unit>
+			<trans-unit id="foto.description">
+				<source>foto</source>
+			</trans-unit>
+			<trans-unit id="foto_display_internet.description">
+				<source>fotoDisplayInternet</source>
+			</trans-unit>
+			<trans-unit id="fe_user.description">
+				<source>feUser</source>
+			</trans-unit>
+			<trans-unit id="function.description">
+				<source>function</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

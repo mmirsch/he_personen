@@ -1,10 +1,175 @@
 {
     "modules": [
+        {
+            "config": {
+                "position": [
+                    151,
+                    98
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
 
+                    ]
+                },
+                "name": "Persons",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "Personendaten",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "674299053420"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "officeHours",
+                            "propertyType": "String",
+                            "uid": "1279794599648"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "foto",
+                            "propertyType": "Image",
+                            "uid": "1136127939145"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "fotoDisplayInternet",
+                            "propertyType": "Boolean",
+                            "uid": "531725197437"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "\\TYPO3\\CMS\\Extbase\\Domain\\Model\\FrontendUser",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "feUser",
+                            "relationType": "zeroToOne",
+                            "relationWire": "",
+                            "uid": "359539602325"
+                        },
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "function",
+                            "relationType": "manyToMany",
+                            "relationWire": "[wired]",
+                            "uid": "299937593888"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    560,
+                    110
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
+
+                    ]
+                },
+                "name": "Functions",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "Funktionen der Pesonen",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "10913370403"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "750548225653"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "functionType",
+                            "propertyType": "String",
+                            "uid": "631525721778"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
     ],
     "properties": {
         "backendModules": [
-
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "",
+                "key": "pesonen",
+                "mainModule": "tools",
+                "name": "HE-Personen",
+                "tabLabel": ""
+            }
         ],
         "description": "Verwaltung und Anzeige von Personendaten der Hochschulangeh\u00f6rigen",
         "emConf": {
@@ -12,30 +177,49 @@
             "custom_category": "",
             "dependsOn": "typo3 => 7.6.0-7.6.99\n",
             "disableLocalization": false,
-            "disableVersioning": false,
-            "skipGenerateDocumentationTemplate": false,
-            "sourceLanguage": "en",
+            "disableVersioning": true,
+            "skipGenerateDocumentationTemplate": true,
+            "sourceLanguage": "de",
             "state": "alpha",
             "targetVersion": "7.6.0-7.6.99",
             "version": "0.0.1"
         },
         "extensionKey": "he_personen",
         "name": "HE Personen",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "he_personen",
+        "originalVendorName": "He",
         "persons": [
 
         ],
         "plugins": [
-
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "personen",
+                "name": "Personen"
+            }
         ],
         "vendorName": "He"
     },
     "wires": [
-
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_1",
+                "uid": "299937593888"
+            },
+            "tgt": {
+                "moduleId": 1,
+                "terminal": "SOURCES",
+                "uid": "10913370403"
+            }
+        }
     ],
     "log": {
-        "last_modified": "2016-05-19 12:57",
+        "last_modified": "2016-05-19 04:06",
         "extension_builder_version": "7.6.0",
         "be_user": " (4)"
     }

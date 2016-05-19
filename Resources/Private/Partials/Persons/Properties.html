@@ -1,0 +1,27 @@
+
+<table class="tx-he-personen" >
+	<tr>
+		<td>
+			<f:translate key="tx_hepersonen_domain_model_persons.office_hours" />
+		</td>
+		<td>
+		{persons.officeHours}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_hepersonen_domain_model_persons.foto" />
+		</td>
+		<td>
+				<f:image src="{persons.foto.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_hepersonen_domain_model_persons.foto_display_internet" />
+		</td>
+		<td>
+		{persons.fotoDisplayInternet}
+		</td>
+	</tr>
+</table>
