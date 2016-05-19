@@ -48,7 +48,7 @@ class PersonsController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
     public function listAction()
     {
         $persons = $this->personsRepository->findAll();
-        $this->view->assign('persons', $persons);
+        $this->view->assign('personsList', $persons);
     }
     
     /**

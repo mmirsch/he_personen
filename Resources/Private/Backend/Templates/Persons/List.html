@@ -26,7 +26,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
 		<th> </th>
 	</tr>
 
-	<f:for each="{personss}" as="persons">
+	<f:for each="{personsList}" as="persons">
 		<tr>
 			<td><f:link.action action="show" arguments="{persons : persons}"> {persons.officeHours}</f:link.action></td>
 			<td><f:link.action action="show" arguments="{persons : persons}"> {persons.foto.originalResource.name}</f:link.action></td>
